@@ -1,0 +1,54 @@
+{
+  "name": "rapid-ioc",
+  "version": "1.0.2",
+  "description": "Lightweight dependency injection container",
+  "keywords": [
+    "dependency injection",
+    "dependency inversion",
+    "inversion of control",
+    "container",
+    "ioc",
+    "di",
+    "dic"
+  ],
+  "license": "MIT",
+  "author": "xuanguyen <xuan.0211@gmai.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuanhoa88/rapid-ioc.git"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.cts"
+    }
+  },
+  "scripts": {
+    "prepack": "npm run build",
+    "build": "tsc --build",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "@types/chai": "5.0.1",
+    "@types/mocha": "10.0.10",
+    "@types/node": "20.6.2",
+    "@types/sinon": "17.0.3",
+    "@typescript-eslint/eslint-plugin": "6.21.0",
+    "@typescript-eslint/parser": "6.21.0",
+    "chai": "4.3.7",
+    "eslint": "8.57.1",
+    "eslint-config-prettier": "8.10.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "mocha": "10.2.0",
+    "prettier": "3.3.3",
+    "sinon": "15.2.0",
+    "sinon-chai": "3.7.0",
+    "ts-node": "10.9.2",
+    "typescript": "4.9.5"
+  },
+  "engines": {
+    "node": ">=16.x",
+    "npm": ">=8.x"
+  }
+}
