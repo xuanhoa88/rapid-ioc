@@ -1,6 +1,6 @@
 {
   "name": "rapid-ioc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lightweight dependency injection container",
   "keywords": [
     "dependency injection",
@@ -21,12 +21,15 @@
     ".": {
       "require": "./dist/index.js",
       "import": "./dist/index.js",
-      "types": "./dist/index.d.cts"
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
+    "postinstall": "npm run build",
     "prepack": "npm run build",
     "build": "tsc --build",
+    "lint": "eslint './src/**/*.ts'",
+    "lint:fix": "npm run lint -- --fix",
     "test": "mocha"
   },
   "devDependencies": {
