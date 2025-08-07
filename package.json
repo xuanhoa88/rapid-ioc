@@ -1,6 +1,6 @@
 {
   "name": "rapid-ioc",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Lightweight dependency injection container",
   "keywords": [
     "dependency injection",
@@ -12,7 +12,7 @@
     "dic"
   ],
   "license": "MIT",
-  "author": "xuanguyen <xuan.0211@gmai.com>",
+  "author": "XuanNguyen <xuan.0211@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xuanhoa88/rapid-ioc.git"
@@ -48,6 +48,6 @@
     "typescript": "4.9.5"
   },
   "engines": {
-    "node": ">=16.x"
+    "node": ">=16"
   }
 }
