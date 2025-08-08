@@ -17,37 +17,28 @@
     "type": "git",
     "url": "git+https://github.com/xuanhoa88/rapid-ioc.git"
   },
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "postinstall": "npm run build",
+    "prepare": "npm run build",
     "build": "tsc --build",
     "lint": "eslint './src/**/*.ts'",
     "lint:fix": "npm run lint -- --fix",
-    "test": "mocha"
+    "test": "jest"
   },
   "devDependencies": {
-    "@types/chai": "5.0.1",
-    "@types/mocha": "10.0.10",
-    "@types/sinon": "17.0.3",
+    "@types/jest": "28.1.3",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
-    "chai": "4.3.7",
     "eslint": "8.22.0",
     "eslint-config-prettier": "8.10.0",
     "eslint-plugin-prettier": "5.2.1",
-    "mocha": "10.2.0",
+    "jest": "28.1.3",
     "prettier": "3.3.3",
-    "sinon": "15.2.0",
-    "sinon-chai": "3.7.0",
+    "ts-jest": "28.0.8",
     "typescript": "4.9.5"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=14"
   }
 }
